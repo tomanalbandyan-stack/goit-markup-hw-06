@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -29,7 +30,11 @@
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           </ul>
         </nav>
-
+        <button class="menu-btn" type="button">
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <address class="contacts">
           <ul class="contacts-list">
             <li>
@@ -46,7 +51,6 @@
         </address>
       </div>
     </header>
-
     <main>
       <section class="hero" id="hero">
         <div class="container">
@@ -450,7 +454,71 @@
         </div>
       </div>
     </footer>
-    <div id="modal" class="backdrop">
+
+    <div class="mobile-menu">
+      <button class="mobile-menu-btn" type="button">
+        <svg class="mobile-menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contacts-list">
+        <li>
+          <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration1"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration2"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration3"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration4"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="modal" class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -509,11 +577,7 @@
           </div>
 
           <div class="modal-form-field">
-            <label
-              class="modal-form-label"
-              for="userComment"
-              >Comment</label
-            >
+            <label class="modal-form-label" for="userComment">Comment</label>
             <textarea
               class="modal-form-comment"
               rows="5"
@@ -524,7 +588,13 @@
           </div>
 
           <div class="modal-checkbox-field">
-            <input class="modal-checkbox" type="checkbox" name="user-policy" id="userPolicy" value="true"/>
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              name="user-policy"
+              id="userPolicy"
+              value="true"
+            />
             <label class="modal-checkbox-label" for="userPolicy">
               <span class="modal-checkbox-span">
                 <svg class="modal-checkbox-icon" width="10" height="8">
