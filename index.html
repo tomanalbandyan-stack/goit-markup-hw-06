@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -51,6 +50,69 @@
         </address>
       </div>
     </header>
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-btn" type="button">
+        <svg class="mobile-menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contacts-list">
+        <li>
+          <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration1"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration2"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration3"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#illustration4"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="hero" id="hero">
         <div class="container">
@@ -119,7 +181,12 @@
           <h2 class="team-header">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/team-1.jpg" width="264" alt="Mark Guerrero" />
+              <img
+                src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1.jpg 2x"
+                width="264"
+                alt="Mark Guerrero"
+              />
               <div class="team-content">
                 <h3 class="team-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -156,7 +223,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-2.jpg" width="264" alt="Tom Ford" />
+              <img
+                src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2.jpg 2x"
+                width="264"
+                alt="Tom Ford"
+              />
               <div class="team-content">
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -193,7 +265,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-3.jpg" width="264" alt="Camila Garcia" />
+              <img
+                src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3.jpg 2x"
+                width="264"
+                alt="Camila Garcia"
+              />
               <div class="team-content">
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -230,7 +307,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-4.jpg" width="264" alt="Daniel Wilson" />
+              <img src="./images/team-4.jpg" srcset="./images/team-4.jpg 1x, ./images/team-4.jpg 2x" width="264" alt="Daniel Wilson" />
               <div class="team-content">
                 <h3 class="team-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -276,7 +353,7 @@
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-1.jpg"
+                  src="./images/portfolio-1.jpg" srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1.jpg 2x"
                   width="360"
                   alt="Banking App"
                 />
@@ -294,7 +371,7 @@
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-2.jpg"
+                  src="./images/portfolio-2.jpg" srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2.jpg 2x"
                   width="360"
                   alt="Cashless Payment"
                 />
@@ -312,7 +389,7 @@
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-3.jpg"
+                  src="./images/portfolio-3.jpg" srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3.jpg 2x"
                   width="360"
                   alt="Meditation App"
                 />
@@ -330,7 +407,7 @@
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-4.jpg"
+                  src="./images/portfolio-4.jpg" srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4.jpg 2x"
                   width="360"
                   alt="Taxi Service"
                 />
@@ -348,7 +425,7 @@
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-5.jpg"
+                  src="./images/portfolio-5.jpg" srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5.jpg 2x"
                   width="360"
                   alt="Screen Illustrations"
                 />
@@ -366,7 +443,7 @@
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
                 <img
-                  src="./images/portfolio-6.jpg"
+                  src="./images/portfolio-6.jpg" srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6.jpg 2x"
                   width="360"
                   alt="Online Courses"
                 />
@@ -398,7 +475,7 @@
           </p>
         </div>
 
-        <div class="footer-social-box">
+        <div class="footer-social">
           <p class="footer-social-text">Social media</p>
 
           <ul class="footer-social-list">
@@ -436,7 +513,7 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <label class="footer-form-wrapper">Subscribe</label>
+          <p class="footer-form-title">Subscribe</p>
           <form class="footer-form" name="subscribeForm">
             <input
               class="footer-form-field"
@@ -455,69 +532,6 @@
       </div>
     </footer>
 
-    <div class="mobile-menu">
-      <button class="mobile-menu-btn" type="button">
-        <svg class="mobile-menu-btn-icon" width="8" height="8">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu-list">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link current" href="#">Studio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">Portfolio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">Contacts</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu-contacts-list">
-        <li>
-          <a class="mobile-menu-contacts-link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li>
-          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="">
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#illustration1"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="">
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#illustration2"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="">
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#illustration3"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="">
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#illustration4"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
     <div id="modal" class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">

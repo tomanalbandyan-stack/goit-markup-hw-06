@@ -72,6 +72,7 @@
 }
 
 .logo {
+  padding: 16px 0;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -80,6 +81,12 @@
 @media only screen and (min-width: 768px) {
   .logo {
     margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
   }
 }
 
