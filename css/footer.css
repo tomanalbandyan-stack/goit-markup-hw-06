@@ -33,6 +33,7 @@
 
 .footer-text {
   max-width: 264px;
+  text-align: left;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -150,9 +151,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 24px;
     row-gap: 72px;
+    max-width: 584px;
+    margin: 0 auto;
   }
 
   .footer-logo-box,
@@ -194,6 +197,7 @@
   }
 
   .footer-logo-box {
+    text-align: center;
     margin-right: 120px;
   }
 
