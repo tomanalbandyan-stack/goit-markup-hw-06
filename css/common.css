@@ -52,7 +52,7 @@ img {
 /*? Mobile screen */
 
 .container {
-    width: 320px;
+    max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
 
@@ -63,7 +63,7 @@ img {
 /*? Tablet screen */
 @media screen and (min-width: 768px) {
 .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0px 16px;
 }
 }
@@ -71,7 +71,7 @@ img {
 /*? Desktop screen */
 @media screen and (min-width: 1158px) {
 .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
 }
 }
